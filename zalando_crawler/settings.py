@@ -16,7 +16,7 @@ NEWSPIDER_MODULE = 'zalando_crawler.spiders'
 
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
-#USER_AGENT = 'zalando_crawler (+http://www.yourdomain.com)'
+USER_AGENT = 'okhttp'
 
 # Obey robots.txt rules
 ROBOTSTXT_OBEY = True
@@ -46,9 +46,9 @@ ROBOTSTXT_OBEY = True
 
 # Enable or disable spider middlewares
 # See http://scrapy.readthedocs.org/en/latest/topics/spider-middleware.html
-#SPIDER_MIDDLEWARES = {
+# SPIDER_MIDDLEWARES = {
 #    'zalando_crawler.middlewares.ZalandoCrawlerSpiderMiddleware': 543,
-#}
+# }
 
 # Enable or disable downloader middlewares
 # See http://scrapy.readthedocs.org/en/latest/topics/downloader-middleware.html
@@ -88,3 +88,8 @@ ITEM_PIPELINES = {
 #HTTPCACHE_DIR = 'httpcache'
 #HTTPCACHE_IGNORE_HTTP_CODES = []
 #HTTPCACHE_STORAGE = 'scrapy.extensions.httpcache.FilesystemCacheStorage'
+
+# LOG_LEVEL = 'ERROR'
+
+FEED_FORMAT = 'json'
+FEED_URI = 'result.json'
